@@ -24,4 +24,10 @@ public class MonitoramentoEntity
 
     [System.Text.Json.Serialization.JsonIgnore]
     public AreaCultivoEntity? AreaCultivo { get; set; }
+
+    [ForeignKey(nameof(FonteSateliteEntity))]
+    public int FonteSateliteId { get; set; }
+
+    [System.Text.Json.Serialization.JsonIgnore]
+    public FonteSateliteEntity? FonteSatelite { get; set; }
 }

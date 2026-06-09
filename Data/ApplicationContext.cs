@@ -14,4 +14,6 @@ public class ApplicationContext : DbContext
     public DbSet<AreaCultivoEntity> AreaCultivo { get; set; }
     public DbSet<MonitoramentoEntity> Monitoramento { get; set; }
     public DbSet<AlertaEntity> Alerta { get; set; }
+    public DbSet<FonteSateliteEntity> FonteSatelite { get; set; }
+    public DbSet<LogErroEntity> LogErro { get; set; }
 }
